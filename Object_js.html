@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            var a={
+                fname: 'suneel',
+                lname: 'chauhan',
+                age:'28',
+                arry:["sonu","monu"],
+                sal:function(f){
+                   // return f;
+                   document.write("<br>"+f);
+                },
+                fullname : function(){
+                    var city = "Agra";
+                    document.write("city :"+city);
+                    document.write("<br>fun:"+this.lname);
+
+                }
+
+            }
+            console.log(a);
+            document.write("F.name: "+a.fname+"<br> Age: "+a.age);
+            document.write("<br>Array : "+a.arry[1]);
+            //document.write("<br>Function:"+a.sal(65));
+            a.sal(99);
+            document.write("<br>");
+            a.fullname();
+        </script>
+    </head>
+</html>

@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      #test{
+          width: 150px;
+          height: 150px;
+          background: aqua;
+      }
+  </style>
+    <script>
+     var target=document.getElementById("test");
+var a=0;
+var i=setInterval(anim,200);
+function anim(){
+     
+    
+    if(a==500){
+        clearInterval(i);
+    }
+    else{
+        a=a+10  ;
+    //target.style.marginLeft = a + 'px';
+    target.style.height=a+'px';
+    target.style.width=a+'px';
+    console.log(a);
+    }
+}
+    </script>
+  </head>
+  <body>
+    <div id="test">this is div.</div>
+
+  </body>
+</html>
+
+
+
+///////////////
+var element=document.getElementById("test");
+var a=0;
+var si= setInterval(fun,200);
+function fun(){
+if(a==200){
+  clearInterval(si);
+}else
+{
+  a=a+10;
+  element.style.width=a+'px';
+
+}
+}

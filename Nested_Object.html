@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+           var a={
+                fname:'Rakhi',
+                age:24,
+                // FUNCTION ......................
+                fun:function(){
+                    return this.fname+" "+this.age;
+                     },
+            //NESTED OBJECT..........................
+                     b:{
+                lname:"Chauhan",
+                address:"Agra"
+             }
+
+           }
+           document.write("NESTED OBJ.:"+a.b.lname);
+            document.write("<br>NESTED FUN.:"+a.fun());
+        </script>
+    </head>
+</html>
